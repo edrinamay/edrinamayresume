@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>FRIENDS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  background-color: LavenderBlush;
+  font-family: Times New Roman;
+}
+
+.flip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  border-radius: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: PaleVioletRed;
+  color: Linen;
+  transform: rotateY(180deg);
+}
+
+</style>
+</head>
+<body>
+
+  <center><h1 font size="5" style="color:PaleVioletRed; font-family: courier">˖⟡˚࣪౨ৎ⋆ My Friends ⋆౨ৎ˚⟡˖</h1></font>
+ <p><center><i>"A friend is somebody who can make us feel better no matter how bad things may be."</i></p>
+
+<div class="flip-container">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="fren2.jpg" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>♡Intern Friends♡</h1> 
+        <center><p>These are my intern friends. We weren't together for a long time, but the impact they've had on my life is really big. They mean so much to me. I'm really glad I met them, even for such a short time. 
+They were very helpful and kind-hearted. Hanging out with them was so much fun. I hope there are more moments to come for the five of us. Love y'all!</p></center>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="kawan.jpg" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>♡Aqilah & Huda♡</h1> 
+        <center><p>These are my high school friends. We've been friends for 8 years and still counting. These girls are truly my only girls. Even though we're now focusing on our own paths, I hope it doesn't strain our bond.
+ I really don't want to lose these people. Thank you for being there through my growing up. I hope our friendship lasts forever. Xoxo</p></center> 
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="bocah.jpg" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>♡Roommates♡</h1> 
+        <center><p>This is my ex-roommates from Semester 3. They were all so funny, and their personalities matched mine so well. Sadly, we were only able to be together for four months because they had already completed their studies. 
+Oh, by the way, they were Pra-Diploma students. I really miss the bond we shared, and I hope we can reunite for a catch-up session someday. Love you guys, 143! <3</center></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="far.jpg" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>♡Nur Farzana♡</h1> 
+        <p>It all started when we became roommates. Then, day by day, we became closer. She kind of has the same vibe as me. I mean, we’re both into Seventeen, haha! At first, I was like, 'Why is she also into them?'
+ But then it was fun because we could relate to the same thing! She’s really rajin, always ceconteng me (IYKYK) >.< 
+Thank you for coming into my life. <3 I hope there are no fights between us. Let’s keep this friendship forever. Xx"</p> 
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="thirah.jpg" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>♡Nur Athirah♡</h1> 
+        <center><p>We’ve been friends since we were both freshmen. We got to know each other during MDS, and what a coincidence it turned out we were in the same class. She’s such a humorous person who always makes me laugh. 
+We’re constantly talking nonsense, and I’m so grateful for how patient you’ve been with me, even though I can be super annoying.
+Diploma life might be coming to an end, but I hope our friendship never does. Xx</p> </center>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p><center><p>© 2024 Nabilla Edrina. All rights reserved.</p></center>
+
+</body>
+</html>

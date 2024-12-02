@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>GALLERY</title>
+<style>
+
+  body { 
+  background-image: url('sanrio.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 140%;
+            font-family: Georgia;
+        }
+
+  h1 {
+  text-align: center;
+  font-size: 36px;
+  }
+
+  .image-container {
+   display: flex;         
+   justify-content: center; 
+   gap: 20px;               
+   flex-wrap: wrap;         
+   margin-top: 20px;       
+   }
+
+  .container {
+   position: relative;
+   width: 250px;           
+   height: 250px;           
+   }
+
+  .image {
+   width: 100%;            
+   height: 100%;
+   transition: 0.5s ease;
+   border-radius: 10px;    
+   }
+
+  .middle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+   transition: 0.5s ease;
+   }
+
+  .container:hover .image {
+   opacity: 0.3;
+   }
+
+  .container:hover .middle {
+   opacity: 1;
+   }
+
+  .text {
+   background-color:PaleVioletRed;
+   color: white;
+   font-size: 16px;
+   padding: 10px 20px;
+   border-radius: 5px; 
+   }
+    </style>
+</head>
+<body>
+
+    <center>
+        <h1><font size="6" style="color:PaleVioletRed;"><marquee>˖⟡˚࣪౨ৎ⋆ My Gallery ⋆౨ৎ˚⟡˖ ࣪</marquee></h1></font>
+        <p>Welcome to my gallery! Here is where I keep my memories❤︎</p>
+    </center>
+
+    <div class="image-container">
+          <a href="family.html" target="_blank">
+            <div class="container">
+                <img src="fam1.jpg" alt="Family" class="image">
+                <div class="middle">
+                    <div class="text">Family</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="friends.html" target="_blank">
+            <div class="container">
+                <img src="fren.jpg" alt="Friends" class="image">
+                <div class="middle">
+                    <div class="text">Friends</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="max.html" target="_blank">
+            <div class="container">
+                <img src="maxi.jpg" alt="Max" class="image">
+                <div class="middle">
+                    <div class="text">Max</div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+<p><center><footer><p>© 2024 Nabilla Edrina. All rights reserved.</p></center></footer>
+
+</body>
+</html>
