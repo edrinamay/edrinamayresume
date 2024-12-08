@@ -1,0 +1,76 @@
+<html>
+<title>MAIN PAGE</title>
+<head>‎‎</head>
+<link rel="stylesheet" type="text/css" href="index.css">
+<style>
+body {
+  background-image: url('cherry.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+   #clock {
+    font-size: 20px;
+    color: black;
+    font-family: 'Georgia', serif;
+    margin-top: 20px;
+        }
+</style>
+
+<body>
+<div id="clock"></div>
+
+   
+
+    <script>
+        function updateClock() {
+            var today = new Date();
+            
+            // Get the current date components
+            var dayOfWeek = today.toLocaleString('en-us', { weekday: 'long' });
+            var day = today.getDate();
+            var month = today.getMonth() + 1; // Month is 0-based
+            var year = today.getFullYear();
+            
+            // Get the current time components
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+
+            // Add leading zeros to minutes and seconds if needed
+            minutes = (minutes < 10) ? '0' + minutes : minutes;
+            seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+            // Format the time and date
+            var timeString = hours + ':' + minutes + ':' + seconds;
+            var dateString = dayOfWeek + ', ' + day + '/' + month + '/' + year;
+
+            // Display the date and time in the HTML element
+            document.getElementById('clock').innerHTML = dateString + ' | ' + timeString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize the clock immediately
+        updateClock();
+    </script>
+
+<center><video controls style = "width:320px; height:240px;" autoplay>
+	<source src="Red Beige Abstract Welcome Intro Youtube (2).mp4" type="video/mp4">
+	</video></center>
+
+<center><audio controls>
+  <source src="1731921506.1918573_ytshorts.savetube.me.mp4" type="audio/mp4">
+Your browser does not support the audio element.
+</audio>
+
+<center><h1><b><font size="6" style="background-color:PaleVioletRed; color: Linen; font-family:courier;"> ᵔᴗᵔ EDRINA'S PAGE ᵔᴗᵔ</h1></b></font>
+<center><h2><b><font size="4" style="background-color:PaleVioletRed; color: Linen; font-family:courier;">To know more detail about me, press start♡<br></h2></b></font>
+
+<a href="biodata.html" target="_self"><img src= "start.jpg" style="width:70px;height:70px;"></a><br><br><br></font>
+
+<p><center><p>© 2024 Nabilla Edrina. All rights reserved.</p></center>
+
+</body>
+</html>
